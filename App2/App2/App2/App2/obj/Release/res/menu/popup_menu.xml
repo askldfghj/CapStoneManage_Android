@@ -1,0 +1,1 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"><item android:id="@+id/item1" android:title="내 팀" /><item android:id="@+id/item2" android:title="진행중인 팀" /><item android:id="@+id/item3" android:title="완료된 팀" /></menu>

@@ -1,0 +1,9 @@
+C:\Users\JPG\Documents\Visual Studio 2015\Projects\App2\App2\obj\Release\android\assets\App2.dll
+C:\Users\JPG\Documents\Visual Studio 2015\Projects\App2\App2\obj\Release\android\assets\Mono.Android.dll
+C:\Users\JPG\Documents\Visual Studio 2015\Projects\App2\App2\obj\Release\android\assets\Mono.Android.Export.dll
+C:\Users\JPG\Documents\Visual Studio 2015\Projects\App2\App2\obj\Release\android\assets\mscorlib.dll
+C:\Users\JPG\Documents\Visual Studio 2015\Projects\App2\App2\obj\Release\android\assets\System.Core.dll
+C:\Users\JPG\Documents\Visual Studio 2015\Projects\App2\App2\obj\Release\android\assets\System.dll
+C:\Users\JPG\Documents\Visual Studio 2015\Projects\App2\App2\obj\Release\android\assets\System.Xml.dll
+C:\Users\JPG\Documents\Visual Studio 2015\Projects\App2\App2\obj\Release\android\assets\System.Runtime.Serialization.dll
+C:\Users\JPG\Documents\Visual Studio 2015\Projects\App2\App2\obj\Release\android\assets\System.ServiceModel.Internals.dll

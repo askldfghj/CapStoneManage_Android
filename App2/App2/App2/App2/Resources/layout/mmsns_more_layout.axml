@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/confirm">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:background="@color/title"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="vertical"
+                android:layout_height="fill_parent">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/title">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@color/dategray"
+                        android:layout_marginLeft="4dp"
+                        android:gravity="center"
+                        android:layout_gravity="center">
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/mmsnsout"
+                            android:src="@drawable/close_up" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="MMSNS"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="22dp" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="4dp"
+                        android:gravity="center"
+                        android:layout_gravity="center">
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/snsedit"
+                            android:src="@drawable/edit_up" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ListView
+                        android:id="@+id/mmsns_list_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_marginBottom="4dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent">
+                    <TextView
+                        android:id="@+id/sns_writer"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="작성자"
+                        android:textColor="@color/black" />
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        android:layout_marginRight="4dp"
+                        android:gravity="right">
+                        <TextView
+                            android:id="@+id/sns_write_date"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginBottom="4dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/dategray"
+                            android:text="2016-11-11" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="4dp" />
+                <ImageView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    android:id="@+id/sns_body"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="6dp"
+                    android:text="여기 내용여기 내용여기 내용여기 내용여기 내용여기 내용여기 내용여기 내용여기 내용여기 내용여기 내용여기 내용여기 내용여기 내용여기 내용여기 내용여기 내용여기 내용"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="4dp">
+                <ListView
+                    android:id="@+id/mmsns_comment_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/confirm"
+        android:layout_alignParentBottom="true">
+        <EditText
+            android:layout_marginLeft="5dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/commenttext"
+            android:paddingTop="6dp"
+            android:background="@drawable/EditTextStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        <Button
+            android:id="@+id/commentbtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="등록"
+            android:layout_weight="3" />
+    </LinearLayout>
+</RelativeLayout>

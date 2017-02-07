@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="App2.App2" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+  <!--suppress UsesMinSdkAttributes-->
+  <uses-sdk android:minSdkVersion="16" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <application android:label="CAP" android:icon="@drawable/cap_icon" android:name="md506f5d8d470dc445d621c844165e4e6c3.AppContext" android:allowBackup="true" android:debuggable="true">
+    <activity android:theme="@style/Theme.NoTitle" android:name="md506f5d8d470dc445d621c844165e4e6c3.AccountActivity" />
+    <activity android:theme="@style/Theme.NoTitle" android:name="md506f5d8d470dc445d621c844165e4e6c3.Add_Account_Activity" />
+    <activity android:theme="@style/Theme.NoTitle" android:name="md506f5d8d470dc445d621c844165e4e6c3.Add_Taks_Activity" />
+    <activity android:theme="@style/Theme.NoTitle" android:name="md506f5d8d470dc445d621c844165e4e6c3.another_activity" />
+    <activity android:theme="@style/Theme.NoTitle" android:name="md506f5d8d470dc445d621c844165e4e6c3.EditTileActivity" />
+    <activity android:theme="@style/Theme.NoTitle" android:name="md506f5d8d470dc445d621c844165e4e6c3.Edit_Account_Activity" />
+    <activity android:theme="@style/Theme.NoTitle" android:name="md506f5d8d470dc445d621c844165e4e6c3.LoginActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:configChanges="orientation|screenSize" android:theme="@style/Theme.NoTitle" android:name="md506f5d8d470dc445d621c844165e4e6c3.MainActivity" />
+    <activity android:theme="@style/Theme.NoTitle" android:name="md506f5d8d470dc445d621c844165e4e6c3.mmSNSMoreActivity" />
+    <activity android:theme="@style/Theme.NoTitle" android:name="md506f5d8d470dc445d621c844165e4e6c3.mmsns_Activity" />
+    <activity android:theme="@style/Theme.NoTitle" android:name="md506f5d8d470dc445d621c844165e4e6c3.ProjectEditActivity" />
+    <activity android:theme="@style/Theme.NoTitle" android:name="md506f5d8d470dc445d621c844165e4e6c3.register_activity" />
+    <activity android:theme="@style/Theme.NoTitle" android:name="md506f5d8d470dc445d621c844165e4e6c3.SnsEditActivity" />
+    <activity android:theme="@style/Theme.NoTitle" android:name="md506f5d8d470dc445d621c844165e4e6c3.SnsWriteActivity" />
+    <activity android:theme="@style/Theme.NoTitle" android:name="md506f5d8d470dc445d621c844165e4e6c3.TaskEditActivity" />
+    <activity android:theme="@style/Theme.NoTitle" android:name="md506f5d8d470dc445d621c844165e4e6c3.team_select_activity" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="App2.App2.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.App2.App2" />
+      </intent-filter>
+    </receiver>
+  </application>
+</manifest>
